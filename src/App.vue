@@ -41,7 +41,7 @@ export default {
   methods: {
     async generatePuzzle() {
       try {
-        const response = await axios.post('http://localhost:3000/generate', {
+        const response = await axios.post('wordfinder-backend-b39o77xcq-dwikys-projects.vercel.app/generate', {
           rssUrl: 'https://www.nu.nl/rss/Algemeen'
         });
         console.log(response.data);
